@@ -3,7 +3,8 @@ Returneaza true daca n este prim si false daca nu.
 '''
 def is_prime(n):
   # codul vostru aici
-  
+  #am modificat ceva in acest fisier
+
   
 '''
 Returneaza produsul numerelor din lista lst.
