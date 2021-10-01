@@ -34,12 +34,16 @@ def get_cmmdc_v1(x, y):
 Returneaza CMMDC a doua numere x si y folosind al doilea algoritm.
 '''
 def get_cmmdc_v2(x, y):
-  print("ana are mere")
-  
+    while y!=0:
+        r=x%y
+        x=y
+        y=r
+    return x
   
 def main():
     a = int(input("primul numar este:"))
     b = int(input("al doilea numar este:"))
     print(get_cmmdc_v1(a,b))
+    print(get_cmmdc_v2(a,b))
 if __name__ == '__main__':
   main()
