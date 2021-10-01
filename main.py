@@ -25,8 +25,10 @@ def get_product(lst):
 Returneaza CMMDC a doua numere x si y folosind primul algoritm.
 '''
 def get_cmmdc_v1(x, y):
-  print("ana are mere")
-
+    while x != y:
+        if x > y: x -= y
+        else: y -= x
+    return x
 
 '''
 Returneaza CMMDC a doua numere x si y folosind al doilea algoritm.
@@ -36,12 +38,8 @@ def get_cmmdc_v2(x, y):
   
   
 def main():
-    n = int(input("n este:"))
-    lst=[]
-    for i in range(1,n+1):
-        x=int(input("elementele sunt: "))
-        lst.append(x)
-    print(get_product(lst))
-
+    a = int(input("primul numar este:"))
+    b = int(input("al doilea numar este:"))
+    print(get_cmmdc_v1(a,b))
 if __name__ == '__main__':
   main()
