@@ -16,8 +16,10 @@ def is_prime(n):
 Returneaza produsul numerelor din lista lst.
 '''
 def get_product(lst):
-  print("ana are mere")
-  
+    produs=1
+    for ele in range(0, len(lst)):
+        produs = produs * lst[ele]
+    return produs
   
 '''
 Returneaza CMMDC a doua numere x si y folosind primul algoritm.
@@ -35,10 +37,11 @@ def get_cmmdc_v2(x, y):
   
 def main():
     n = int(input("n este:"))
-    if is_prime(n):
-        print("a")
-    else:
-        print("b")
+    lst=[]
+    for i in range(1,n+1):
+        x=int(input("elementele sunt: "))
+        lst.append(x)
+    print(get_product(lst))
 
 if __name__ == '__main__':
   main()
