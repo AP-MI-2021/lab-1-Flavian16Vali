@@ -41,9 +41,19 @@ def get_cmmdc_v2(x, y):
     return x
   
 def main():
-    a = int(input("primul numar este:"))
-    b = int(input("al doilea numar este:"))
-    print(get_cmmdc_v1(a,b))
-    print(get_cmmdc_v2(a,b))
+    n=int(input("verifica daca acest numar este prim:"))
+    if is_prime(n)==True: print("este prim")
+    else: print("nu este prim")
+
+    m=int(input("numarul de elemente din lista este:"))
+    lst=[]
+    for i in range(1,m+1):
+        x=int(input("element din lista:"))
+        lst.append(x)
+    print(get_product(lst))
+    a = int(input("primul numar pentru cmmdc este:"))
+    b = int(input("al doilea numar pentru cmmdc este:"))
+    print("afisarea primului subprogram de cmmdc:",get_cmmdc_v1(a,b))
+    print("afisarea celui de-al doilea subprogram de cmmdc:",get_cmmdc_v2(a,b))
 if __name__ == '__main__':
   main()
