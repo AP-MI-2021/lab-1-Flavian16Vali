@@ -51,6 +51,7 @@ def main():
         x=int(input("element din lista:"))
         lst.append(x)
     print(get_product(lst))
+    
     a = int(input("primul numar pentru cmmdc este:"))
     b = int(input("al doilea numar pentru cmmdc este:"))
     print("afisarea primului subprogram de cmmdc:",get_cmmdc_v1(a,b))
